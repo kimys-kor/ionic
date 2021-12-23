@@ -1,0 +1,144 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="title" style="height: 50px;">
+    <center>
+    <ion-title>
+      <span text-color="text" style="font-size: 20px;">에이스원 공기청정기</span><br>
+    </ion-title>
+  </center>
+  <!-- <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+  </ion-buttons> -->
+  <!-- 메뉴 바 -->
+  <!-- <ion-buttons style="float: right;">  
+    <ion-menu-button></ion-menu-button>   
+</ion-buttons> -->
+  </ion-toolbar>
+  <!-- Favicon icon -->
+  <!-- <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon"> -->
+  <!-- Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <!-- waves.css -->
+  <link rel="stylesheet" href="/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+  <!-- Required Fremwork -->
+  <!-- <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/css/bootstrap.min.css"> -->
+  <!-- waves.css -->
+  <link rel="stylesheet" href="/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+  <!-- themify icon -->
+  <link rel="stylesheet" type="text/css" href="/assets/icon/themify-icons/themify-icons.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/icon/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="card wather-card" style="margin-left: 10px; margin-right: 10px; margin-top: 10px;">
+    <center>
+    <ion-list style="margin-top: -10px;">
+      <!-- <ion-radio-group>
+        <ion-list-header style="margin-top: 10px;">
+          <ion-label>설정</ion-label>
+        </ion-list-header><br>
+    
+        <ion-item>
+          <ion-label>자동</ion-label>
+          <ion-radio slot="start" value="biff"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>야간</ion-label>
+          <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>선호</ion-label>
+          <ion-radio slot="start" value="buford"></ion-radio>
+        </ion-item>
+      </ion-radio-group> -->
+      <ion-radio-group allow-empty-selection value="anchovies">
+        <ion-list-header>
+          <ion-label>Mode Settings</ion-label>
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-label>자동모드</ion-label>
+          <ion-radio slot="end" color="danger" value="pepperoni"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>야간모드</ion-label>
+          <ion-radio slot="end" color="tertiary" value="sausage"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>선호모드</ion-label>
+          <ion-radio slot="end" color="success" value="tomato"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list><br><br>
+
+    <!-- <div>
+      <span><b style="font-weight: bold;">면적설정</b>|작업 면적 20~28㎡</span>
+      <ion-range min="-200" max="200" color="secondary">
+        <ion-label slot="start"></ion-label>
+        <ion-label slot="end"></ion-label>
+      </ion-range>
+    </div> -->
+    <div style="font-size: 15px; font-weight: bold; margin-left: -30px;">작업면적 설정</div><br>
+    <input style="width: 200px;" type="range" value="24" min="20" max="28" oninput="this.nextElementSibling.value = this.value">
+    <!-- <b>면적설정|작업면적</b>  -->
+    <output style="margin-left: 10px; font-size: 15px; font-weight: bold;">24</output>
+    <span style="font-weight: bold;">㎡</span><br><br>
+
+  </center>
+  
+
+</div>
+
+<!-- <div class="col-xl-3 col-md-6">
+  <div class="card wather-card">
+<div class="card-block">
+  <ion-button expand="full" style="height: 60px; --background:white; --color:black; --background-activated: rgb(243, 236, 236);">필터<b style="margin-left: 80%;">></b></ion-button><hr>
+  <ion-button expand="full" style="height: 60px; --background:white; --color:black; --background-activated: rgb(243, 236, 236);">예약 전원 켬/끔<b style="margin-left: 55%;">></b></ion-button><hr>
+  <ion-button expand="full" style="height: 60px; --background:white; --color:black; --background-activated: white;">알림소리<ion-toggle color="primary" style="margin-left: 60%;"></ion-toggle></ion-button><hr>
+  <ion-button expand="full" style="height: 60px; --background:white; --color:black; --background-activated: white;">공기청정기 표시등<ion-toggle color="primary" style="margin-left: 38%;"></ion-toggle></ion-button><hr>
+  <ion-button expand="full" style="height: 60px; --background:white; --color:black; --background-activated: white;">자녀보호 잠금<ion-toggle color="primary" style="margin-left: 48%;"></ion-toggle></ion-button><hr>
+  <ion-button expand="full" style="height: 60px; --background:white; --color:black; --background-activated: white;">운행 이상 경고<ion-toggle color="primary" style="margin-left: 46%;"></ion-toggle></ion-button><hr>
+</div>
+</div>
+</div> -->
+
+<div class="card wather-card" style="margin-left: 10px; margin-right: 10px;" id="div02">
+  <table style="font-size: 15px; width: 100%; height: 80px; text-align: left; margin-left: 10px;">
+    <tr style="width: 100%;">
+      <td style="width: 20%;"><img src="/assets/images/a-01.png" height="50px;"></td>
+      <td style="width: 70%;"><p style="font-size: 20px; margin-left: 10px; font-weight: bold;">필터</p></td>
+      <td style="width: 10%;"><img src="/assets/images/a-07.png" alt="" onclick="alert('필터교체');" style="height: 25px; margin-left: 20px;"/></td>
+    </tr>
+    <tr style="width: 100%;">
+      <td style="width: 20%;"><img src="/assets/images/a-02.png" height="50px;"></td>
+      <td style="width: 70%;"><p style="font-size: 20px; margin-left: 10px; font-weight: bold;">예약 전원 켬/끔</p></td>
+      <td style="width: 10%;"><img src="/assets/images/a-07.png" alt="" onclick="alert('전원 켜짐/꺼짐');" style="height: 25px; margin-left: 20px;"/></td>
+    </tr>
+    <tr style="width: 100%;">
+      <td style="width: 20%;"><img src="/assets/images/a-03.png" height="50px;"></td>
+      <td style="width: 70%;"><p style="font-size: 20px; margin-left: 10px; font-weight: bold;">알림소리</p></td>
+      <td style="width: 10%;"><ion-toggle color="primary" style="margin-right: 20px;"></ion-toggle></td>
+    </tr>
+    <tr style="width: 100%;">
+      <td style="width: 20%;"><img src="/assets/images/a-04.png" height="50px;"></td>
+      <td style="width: 70%;"><p style="font-size: 20px; margin-left: 10px; font-weight: bold;">공기청정기 표시등</p></td>
+      <td style="width: 10%;"><ion-toggle color="primary" style="margin-right: 20px;"></ion-toggle></td>
+    </tr>
+    <tr style="width: 100%;">
+      <td style="width: 20%;"><img src="/assets/images/a-05.png" height="50px;"></td>
+      <td style="width: 70%;"><p style="font-size: 20px; margin-left: 10px; font-weight: bold;">자녀보호 잠금</p></td>
+      <td style="width: 10%;"><ion-toggle color="primary" style="margin-right: 20px;"></ion-toggle></td>
+    </tr>
+    <tr style="width: 100%;">
+      <td style="width: 20%;"><img src="/assets/images/a-06.png" height="50px;"></td>
+      <td style="width: 70%;"><p style="font-size: 20px; margin-left: 10px; font-weight: bold;">운행 이상 경고</p></td>
+      <td style="width: 10%;"><ion-toggle color="primary" style="margin-right: 20px;"></ion-toggle></td>
+    </tr>
+  </table>
+</div>
+</ion-content>

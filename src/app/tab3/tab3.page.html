@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="title" style="height: 50px;">
+    <center>
+    <ion-title>
+      <span text-color="text">공기청정기</span><br>
+      <span text-color="text" style="font-size: 7px;">자동모드</span>
+    </ion-title>
+  </center>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+  </ion-buttons>
+  <!-- 메뉴 바 -->
+  <ion-buttons style="float: right;">  
+    <ion-menu-button></ion-menu-button>   
+</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<br>
+<!-- Read more information -->
+  <center>
+  <button id="information" disabled><b>Read more information</b></button>
+</center>
+<!-- 온도 -->
+<div>
+  <button id="leftbtn" disabled><b>온도</b></button>
+  <p id="text">22℃</p>
+</div>
+<hr>
+<!-- 습도 -->
+<div>
+  <button id="leftbtn" disabled><b>습도</b></button>
+  <progress id="pr" value="57" max="100"></progress>
+  <p id="text">57%</p>
+</div>
+<hr>
+<!-- 남은 필터양 -->
+<div>
+  <button id="leftbtn" disabled><b>남은<br>필터양</b></button>
+  <progress id="pr" value="98" max="100"></progress>
+  <p id="text">98%</p>
+</div>
+<hr>
+<!-- 테이블 -->
+<center>
+<table>
+  <tr>
+    <td style="border-right:1px solid white; border-bottom: 1px solid white;">야외<p style="font-size: 30px;">--</p></td>
+    <td style="border-bottom: 1px solid white;">남은 필터(일)<p style="font-size: 30px;">142</p></td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 1px solid white; border-right:1px solid white;">쾌적<p style="font-size: 30px;">추움</p></td>
+    <td style="border-bottom: 1px solid white;">위치 <p style="font-size: 30px;">광주광역시</p></td>
+  </tr>
+</table>
+</center>
+
+
+</ion-content>

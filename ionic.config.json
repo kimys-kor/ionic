@@ -1,0 +1,10 @@
+{
+  "name": "airCleaner",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
